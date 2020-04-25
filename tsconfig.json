@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowJs": true,
+    "outDir": "dist",
+    "lib": ["ES6"],
+    "sourceMap": true,
+    "declaration": true,
+    "watch": true
+  },
+  "include": ["src"],
+}
