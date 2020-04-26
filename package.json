@@ -1,6 +1,6 @@
 {
   "name": "words-to-numbers-es",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Convert spanish text to numbers",
   "scripts": {
     "build": "tsc --build",
