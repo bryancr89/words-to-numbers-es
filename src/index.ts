@@ -1,6 +1,5 @@
-import tokenize from './tokenize';
-import * as I from './interfaces';
+import evaluate from './evaluate';
 
-const tokens: I.Token[] = tokenize('test 123 abc');
+const result: number = evaluate('nueve millones ciento cincuenta y cinco mil setecientos sesenta y ocho colones con setenta y dos céntimos');
 
-console.log('tokens', JSON.stringify(tokens, null, 4));
+console.log('value', result);

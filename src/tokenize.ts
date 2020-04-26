@@ -4,6 +4,9 @@ import {
 } from './identify';
 import './interfaces';
 import * as I from './interfaces';
+import { getWordValue } from './keywords';
+import CONSTANTS from './constants';
+
 
 const tokenize = (input: string): I.Token[] => {
   const tokens: I.Token[] = [];
@@ -19,10 +22,12 @@ const tokenize = (input: string): I.Token[] => {
       while (isLetter(input[++cursor])) {
         word += input[cursor];
       }
-
+      if (getWordValue(word) === null && word !== CONSTANTS.DECIMAL_KEYWORD) {
+        continue;
+      }
       tokens.push({
-        type: 'WordLiteral',
-        value: word,
+        type: CONSTANTS.TOKEN_WORD_LITERAL,
+        text: word,
       });
       continue;
     }
