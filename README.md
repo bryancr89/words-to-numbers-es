@@ -1,5 +1,5 @@
 # Words To Numbers
-Project that converts spanish text into numbers.
+Project that converts spanish words into numbers.
 
 ![<bryancr89](https://circleci.com/gh/bryancr89/words-to-numbers-es.svg?style=shield)
 
